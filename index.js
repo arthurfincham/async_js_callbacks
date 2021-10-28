@@ -45,26 +45,10 @@
 // console.log(2)
 
 
-// console.log(1)
-// setTimeout(() => {
-//   console.log("Hi there!");
-//   console.log(3);
-// }, 0);
-// console.log(2)
+console.log(1)
+setTimeout(() => {
+  console.log("Hi there!");
+  console.log(3);
+}, 0);
+console.log(2)
 
-var users = ['Arthur', 'Leo', 'Fleur']
-
-function addUser(user, callback){
-  setTimeout(function(){
-    users.push(user);
-    callback();
-  }, 3000)
-};
-
-function getUsers(){
-  setTimeout(function(){
-    console.log(users);
-  }, 0)
-};
-
-addUser('Holly', getUsers);
